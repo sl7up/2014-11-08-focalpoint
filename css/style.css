@@ -1,0 +1,494 @@
+body {
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	min-width: 960px;
+
+}
+
+span, p {
+	color: #666;
+
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+	transition:all .1s ease-in;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+}
+
+a:hover {
+	transition:all .1s ease-in;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+}
+
+b {
+	font-weight: bold;
+
+}
+
+p {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 7px;
+	line-height: 50px;
+}
+
+h2 {
+	color: #333;
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 300;
+
+}
+
+h5 {
+	color: #666;
+	font-size: 24px;
+	padding-bottom: 70px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.head-menu{
+	height: 80px;
+	background-color: #000;
+}
+
+
+.logo {
+	display: inline-block;
+	margin-top: 12px;
+}
+
+.navigation {
+	margin-top: 17px;
+}
+
+.navigation li {
+	float: left;
+	margin-left: 20px;
+
+}
+
+.navigation li a {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 10px 12px 40px;
+
+
+}
+
+.navigation li .blog {
+	position: relative;
+	border: 1px solid #000;
+	transition:all .1s ease-in;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+}
+
+.navigation li .blog:hover {
+	border: 1px solid #FFFFFF;
+	transition:all .1s ease-in;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+}
+
+.navigation li .login {
+	position: relative;
+	border: 1px solid #4d4d4d;
+	transition:all .1s ease-in;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+}
+
+.navigation li .login:hover {
+	border: 1px solid #FFFFFF;
+	transition:all .1s ease-in;
+	-webkit-transition:all .1s ease-in;
+	-moz-transition:all .1s ease-in;
+}
+
+.navigation li .blog:before {
+	content: '';
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 0 -205px;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+
+}
+
+.navigation li .login:before {
+	content: '';
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: 0 -222px;
+	width: 17px;
+	height: 19px;
+	position: absolute;
+	left: 10px;
+	top: 11px;
+
+}
+
+.head-block {
+	background: url("../img/barbershop.png") no-repeat;
+	background-size: cover;
+
+}
+
+.header-block-in {
+	padding: 100px 10px 85px 310px;
+	position: relative;
+}
+
+.header-block-in:before {
+	content: '';
+	background: url("../img/girl.png") no-repeat;
+	display: block;
+	height: 476px;
+	width: 309px;
+	position: absolute;
+	left: -20px;
+	bottom: 0;
+
+}
+
+.header-block-in h1, .header-block-in h3 {
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.list {
+	padding: 100px 0 0 60px;
+	float: left;
+
+}
+
+.list li {
+	position: relative;
+}
+
+.list li h4{
+	display: block;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 42px;
+}
+
+.list li h4:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: url("../img/sprite.png") no-repeat;
+	left: -50px;
+	top: 8px;
+}
+
+.list li:nth-child(2) h4:before {
+	background-position: 0 -40px;
+	top: 5px;
+}
+
+.list li:nth-child(3) h4:before {
+	background-position: 0 -90px;
+	top: 12px;
+	width: 30px;
+	height: 20px;
+}
+
+.list li:nth-child(4) h4:before {
+	background-position: 0 -125px;
+	top: 8px;
+	width: 30px;
+	height: 30px;
+}
+
+.list li:last-child h4:before {
+	background-position: 0 -165px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.form {
+	float: right;
+	padding-top: 100px;
+
+
+}
+
+input, button {
+	display: block;
+	height: 50px;
+	width: 300px;
+	font-size: 18px;
+
+
+}
+
+input {
+	padding: 20px;
+	color: #737373;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #eaeaea;
+
+}
+
+.form input:last-child {
+	border-bottom: none;
+}
+
+::-webkit-input-placeholder {
+	color:#999999;
+	font-weight: 300;
+}
+::-moz-placeholder          {
+	color:#999999;
+	font-weight: 300;
+}
+
+:-moz-placeholder           {
+	color:#999999;
+	font-weight: 300;
+}
+:-ms-input-placeholder      {
+	color:#999999;
+	font-weight: 300;
+}
+
+.button, .get-start {
+	padding-top: 4px;
+	padding-left: 19px;
+	color: #FFFFFF;
+	background: linear-gradient(to top, #cc0000, #d83b3b);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 4px solid #ae0000;
+	position: relative;
+	cursor: pointer;
+
+}
+
+.button span {
+	color: #FFFFFF;
+}
+
+.button:hover, .get-start:hover {
+	background: linear-gradient(to top, #f20001, #f84242);
+	border-bottom: 4px solid #cd0000;
+
+
+}
+
+.button:active, .get-start:active {
+	border-bottom: 3px solid #cd0000;
+}
+
+.button:before {
+	content: '';
+	background: url("../img/go.png") no-repeat;
+	display: block;
+	width: 8px;
+	height: 17px;
+	position: absolute;
+	right: 26px;
+	top: 17px;
+}
+
+.first-content {
+	padding-top: 25px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.first-content img {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	z-index: -50;
+}
+
+.login-small {
+	margin-left: 320px;
+	margin-bottom: 65px;
+}
+
+.login-small a{
+	color: #666;
+	position: relative;
+	padding-left: 17px;
+
+}
+
+.login-small a:hover {
+	color: #868686;
+
+
+
+}
+
+.login-small a:before{
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: url("../img/sprite2.png") no-repeat;
+	background-position: 0 -376px;
+	left: 0;
+}
+
+
+.first-content .ba-text-center h2:after {
+	content: '';
+	position: absolute;
+	background: url("../img/sprite2.png") no-repeat;
+	background-position: 0 -104px;
+	width: 28px;
+	height: 28px;
+	top: -10px;
+}
+
+.list-description ul li{
+	padding-left: 110px;
+	padding-bottom: 25px;
+	position: relative;
+}
+
+.list-description ul li:before{
+	content: '';
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url("../img/sprite-red.png") no-repeat #cc0000;
+	border-radius: 50%;
+	left: 30px;
+	background-position: 0 -190px;
+
+
+}
+
+.list-description ul li:nth-child(2):before {
+	background-position: 0 -90px;
+}
+
+.list-description ul li:nth-child(3):before {
+	background-position: 0 -140px;
+}
+
+.list-description ul li:nth-child(4):before {
+	background-position: 0 -44px;
+}
+
+.list-description ul li:nth-child(5):before {
+	background-position: 0 -242px;
+}
+
+.list-description ul li:nth-child(6):before {
+	background-position: 0 7px;
+}
+
+.list-description p {
+	padding-bottom: 8px;
+}
+
+.list-description ul li span {
+	line-height: 25px;
+}
+
+p.ba-text-center {
+	padding-top: 20px;
+	color: #333333;
+}
+
+
+.help-us{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.help-us h2{
+	color: #333333;
+	position: relative;
+}
+.help-us h2:after{
+	content: "";
+	background: url("../img/sprite2.png"), no-repeat;
+	background-position: 0 -284px;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -9px;
+}
+.help-us h3{
+	color: #666666;
+}
+.start{
+	background-color: #333333;
+	padding: 45px 0;
+}
+.start h2{
+	padding-left: 17px;
+	float: left;
+	position: relative;
+}
+
+.get-start{
+	float: right;
+	width: 240px;
+	height: 60px;
+	margin-right: 20px;
+	font-size: 24px;
+	font-weight: 700;
+}
+.get-start:after{
+	content: "";
+	background: none;
+}
+
+.footer{
+	padding: 20px 0;
+	background-color: #000000;
+}
+.footer p{
+	padding-left: 17px;
+	float: left;
+}
+footer ul{
+	float: right;
+}
+.footer li{
+	float: left;
+	padding-right: 20px;
+}
+
+
+.footer li a:hover{
+	color: #aeaeae;
+
+}
