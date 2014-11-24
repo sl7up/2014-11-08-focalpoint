@@ -3,7 +3,7 @@ body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	color: #FFF;
-	min-width: 960px;
+
 
 }
 
@@ -68,7 +68,7 @@ h5 {
 }
 
 .head-menu{
-	height: 80px;
+	padding-bottom: 10px;
 	background-color: #000;
 }
 
@@ -84,8 +84,18 @@ h5 {
 
 .navigation li {
 	float: left;
-	margin-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 
+}
+
+.navigation li:first-child {
+	margin-left: 0;
+}
+
+.navigation li:last-child {
+	margin-right: 0;
 }
 
 .navigation li a {
@@ -243,7 +253,7 @@ h5 {
 input, button {
 	display: block;
 	height: 50px;
-	width: 300px;
+	width: 100%;
 	font-size: 18px;
 
 
@@ -311,7 +321,7 @@ input {
 	border-bottom: 3px solid #cd0000;
 }
 
-.button:before {
+.button:after {
 	content: '';
 	background: url("../img/go.png") no-repeat;
 	display: block;
@@ -326,14 +336,13 @@ input {
 	padding-top: 25px;
 	padding-bottom: 50px;
 	position: relative;
+	background-image: url("../img/money.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 100%;
 }
 
-.first-content img {
-	position: absolute;
-	bottom: 0;
-	display: block;
-	z-index: -50;
-}
+
+
 
 .login-small {
 	margin-left: 320px;
@@ -456,6 +465,9 @@ p.ba-text-center {
 	padding-left: 17px;
 	float: left;
 	position: relative;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: normal;
 }
 
 .get-start{
@@ -491,4 +503,235 @@ footer ul{
 .footer li a:hover{
 	color: #aeaeae;
 
+}
+
+
+
+@media (max-width: 959px) {
+	.form {
+		float: none;
+
+
+	}
+	.header .logo {
+		margin-left: 20px;
+	}
+	.head-menu .navigation{
+		margin-right: 20px;
+
+	}
+	.login-small {
+		display: inline-block;
+		margin-left: 0;
+	}
+	
+	.first-content {
+		text-align: center;
+
+
+	}
+	.first-content .ba-text-center h2:after{
+		position: relative;
+		display: inline-block;
+		top:-5px;
+	}
+
+	.login-small {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.list {
+		margin-bottom: 20px;
+
+
+	}
+	.list li h4 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header .logo {
+		float: none;
+		display: inline-block;
+	}
+	.head-menu .navigation{
+		float: none;
+		margin-right: 0;
+
+	}
+	.button:after{
+		position: relative;
+		display: inline-block;
+		top: 0;
+		right: 0;
+	}
+
+	.head-menu .navigation li {
+		display: inline-block;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+
+	.head-menu {
+		text-align: center;
+
+	}
+
+	.header-block-in:before {
+		display: none;
+	}
+
+	.header-block-in {
+		padding: 100px 10px 85px 10px;
+		text-align: center;
+
+	}
+
+	.list {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.list li h4 {
+		font-size: 28px;
+	}
+
+	.form {
+		float: none;
+
+	}
+
+	.first-content .ba-text-center, .list-description {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.first-content h2, .first-content h5 , .help-us h2{
+		line-height: 1.5;
+	}
+	.f.first-content .ba-text-center h2:after{
+		position: relative;
+		display: inline-block;
+		top:0;
+	}
+	.ba-grid>.ba-width-1-2 {
+		float: none;
+		width: 100%;
+	}
+	.ba-grid-width-1-2 li{
+		width: 100%;
+		text-align: left;
+	}
+
+	.help-us h2:after{
+		display: inline-block;
+		position: relative;
+		line-height: 1.5;
+	}
+	.start{
+		text-align: center;
+	}
+	.start h2, .get-start{
+		float: none;
+		display: inline-block;
+	}
+	.start h2{
+		padding-left: 0;
+	}
+	.footer p {
+		float: none;
+		padding-left: 0;
+	}
+	.footer ul{
+		float: none;
+		display: inline-block;
+		margin-right: -20px;
+		margin-top: 20px;
+	}
+	
+
+	.footer{
+		text-align: center;
+	}
+
+
+}
+
+/*Button*/
+
+.menu-toggle {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	-wbkit-user-select: none;
+}
+
+.menu-toggle:hover {
+	background: none;
+}
+
+.menu-toggle .line,
+.menu-toggle:before,
+.menu-toggle:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background: #ffffff;
+}
+
+.menu-toggle .line,
+.menu-toggle:after {
+	margin-top: 6px;
+}
+
+@media (min-width: 480px) {
+	.menu-toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 479px) {
+	.head-menu .navigation ul {
+		display: none;
+	}
+
+	.head-menu .navigation li {
+		display: block;
+		padding: 0;
+		text-align: left;
+
+	}
+
+	.navigation li .login {
+		border-color: transparent;
+	}
+	
+	.logo {
+		float: left !important;
+		margin-left: 0 !important;
+
+	}
+	
+	.menu-toggle {
+		float: right;
+	}
+
+	.head-menu {
+		padding: 0 15px;
+	}
+}
+
+.menu-toggle:active + ul {
+	display: block;
+	clear: both;
 }
